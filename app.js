@@ -1,4 +1,5 @@
 "use strict";
+import api_key from "./apikey.js";
 // Variables
 const searchCity = document.querySelector(".searchCity");
 const day = document.querySelector(".day");
@@ -9,7 +10,6 @@ const description = document.querySelector(".description");
 const weatherIcon = document.querySelector(".icon-weather");
 const temprature = document.querySelector(".weatherTemp-real");
 
-const key = "9cfa0bb4b1af700be136514df8902b9b";
 const Days = [
   "Sunday",
   "Monday",

@@ -17,6 +17,11 @@ body {
   height: 100vh;
   font-family: "Noto Sans JP", sans-serif;
 }
+.searchbox {
+  display: flex;
+  /* flex-direction: co?; */
+  top: 20px;
+}
 .searchbox input {
   padding: 1rem 6rem;
   border-radius: 4rem;
@@ -30,6 +35,12 @@ body {
 }
 .searchCity {
   font-size: 1.2rem;
+}
+.button {
+  /* margin-top: 5rem; */
+  margin-left: 20rem;
+  width: 100px;
+  height: 50px;
 }
 .weather__container {
   display: flex;
