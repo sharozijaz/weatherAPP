@@ -9,7 +9,7 @@ const feelLike = document.querySelector(".feels");
 const description = document.querySelector(".description");
 const weatherIcon = document.querySelector(".icon-weather");
 const temprature = document.querySelector(".weatherTemp-real");
-const key = config.SECRET_API_KEY;
+const HSS = "9cfa0bb4b1af700be136514df8902b9b";
 const Days = [
   "Sunday",
   "Monday",
@@ -38,7 +38,7 @@ button.addEventListener(
 
   function () {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&APPID=${key}`
+      `http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&APPID=${HSS}`
     )
       .then(function (response) {
         console.log(response);
