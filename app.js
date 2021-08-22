@@ -1,5 +1,5 @@
 "use strict";
-import api_key from "./apikey.js";
+
 // Variables
 const searchCity = document.querySelector(".searchCity");
 const day = document.querySelector(".day");
