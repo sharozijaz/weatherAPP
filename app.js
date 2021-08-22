@@ -9,7 +9,7 @@ const feelLike = document.querySelector(".feels");
 const description = document.querySelector(".description");
 const weatherIcon = document.querySelector(".icon-weather");
 const temprature = document.querySelector(".weatherTemp-real");
-const key = "9cfa0bb4b1af700be136514df8902b9b";
+const key = config.SECRET_API_KEY;
 const Days = [
   "Sunday",
   "Monday",
