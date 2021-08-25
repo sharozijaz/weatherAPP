@@ -1,4 +1,5 @@
 "use strict";
+
 // Variables
 const searchCity = document.querySelector(".input_text");
 const button = document.querySelector(".submit");
@@ -41,7 +42,6 @@ button.addEventListener(
       `http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&APPID=${HSS}`
     )
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (data) {
@@ -61,13 +61,7 @@ button.addEventListener(
           })
           .replace(/ /g, "-");
         weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-        // data.weather[0].icon
-        //  http://openweathermap.org/img/wn/10d@2x.png
-        console.log(data);
       })
       .catch("Error");
   }
 );
-
-// const getWeatherData = getWeatherData("london");
-// console.log(weather);
